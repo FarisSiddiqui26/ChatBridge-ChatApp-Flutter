@@ -7,6 +7,7 @@ import 'package:chatbridge/Models/chat_user.dart';
 import 'package:chatbridge/Widgets/chat_user_card.dart';
 import 'package:chatbridge/api/api.dart';
 import 'package:chatbridge/helper/dialogs.dart';
+import 'package:chatbridge/main.dart';
 import 'package:chatbridge/pages/loginpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +37,6 @@ class _ProfilescreenState extends State<Profilescreen> {
 
   @override
   Widget build(BuildContext context) {
-    final mq = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
@@ -192,8 +192,8 @@ class _ProfilescreenState extends State<Profilescreen> {
           return ListView(
             shrinkWrap: true,
             padding: EdgeInsets.only(
-                top: MediaQuery.of(context).size.height * .03,
-                bottom: MediaQuery.of(context).size.height * .05),
+                top: mq.height * .03,
+                bottom: mq.height * .05),
             children: [
               Text(
                 "Pick Profile Picture",
@@ -201,7 +201,7 @@ class _ProfilescreenState extends State<Profilescreen> {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * .02,
+                height: mq.height * .02,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -211,8 +211,8 @@ class _ProfilescreenState extends State<Profilescreen> {
                           backgroundColor: Colors.white,
                           shape: CircleBorder(),
                           fixedSize: Size(
-                              MediaQuery.of(context).size.width * .3,
-                              MediaQuery.of(context).size.height * .15)),
+                              mq.width * .3,
+                              mq.height * .15)),
                       onPressed: () async {
                         final ImagePicker picker = ImagePicker();
                         final XFile? image =
@@ -231,8 +231,8 @@ class _ProfilescreenState extends State<Profilescreen> {
                           backgroundColor: Colors.white,
                           shape: CircleBorder(),
                           fixedSize: Size(
-                              MediaQuery.of(context).size.width * .3,
-                              MediaQuery.of(context).size.height * .15)),
+                              mq.width * .3,
+                              mq.height * .15)),
                       onPressed: () {
                         
                       },

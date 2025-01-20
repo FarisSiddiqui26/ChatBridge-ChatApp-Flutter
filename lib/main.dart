@@ -15,6 +15,7 @@ import 'package:chatbridge/pages/registration_page.dart';
 import './services/navigation_service.dart';
 import './pages/Homescreen.dart';
 
+late Size mq;
 void main() async {
    WidgetsFlutterBinding.ensureInitialized();
    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,overlays: [SystemUiOverlay.bottom,SystemUiOverlay.top]);

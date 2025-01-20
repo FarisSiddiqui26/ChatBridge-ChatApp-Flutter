@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:chatbridge/Models/chat_user.dart';
 import 'package:chatbridge/Widgets/chat_user_card.dart';
 import 'package:chatbridge/api/api.dart';
+import 'package:chatbridge/main.dart';
 import 'package:chatbridge/pages/profile_screen.dart';
 import 'package:chatbridge/services/navigation_service.dart';
 import 'package:flutter/cupertino.dart';
@@ -41,7 +42,7 @@ class _HomescreenState extends State<Homescreen> {
 
   @override
   Widget build(BuildContext context) {
-    final mq = MediaQuery.of(context).size;
+    // final mq = MediaQuery.of(context).size;
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
      child: WillPopScope(

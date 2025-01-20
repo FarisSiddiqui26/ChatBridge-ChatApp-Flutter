@@ -1,4 +1,5 @@
 import 'package:chatbridge/Models/chat_user.dart';
+import 'package:chatbridge/pages/chat_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -22,7 +23,9 @@ class _ChatUserCardState extends State<ChatUserCard> {
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+         Navigator.push(context, MaterialPageRoute(builder: (_)=>ChatScreen(user:widget.user ,))); 
+        },
         child: ListTile(
           // leading: CircleAvatar(
           //   child: Icon(CupertinoIcons.person),
