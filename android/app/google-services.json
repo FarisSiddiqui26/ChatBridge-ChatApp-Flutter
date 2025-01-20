@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "951780559631",
+    "project_id": "chatbridge-e489a",
+    "storage_bucket": "chatbridge-e489a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951780559631:android:dc36c4550c56d617a18c7a",
+        "android_client_info": {
+          "package_name": "com.example.chatbridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951780559631-3hgne9qk4r5b31i1bq1j2jcvdm3fnrm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatbridge",
+            "certificate_hash": "297cfd544df64c4f74233475acb2746a7ad721c6"
+          }
+        },
+        {
+          "client_id": "951780559631-tpso2263qrhoo74ko5ibes9dr69e0pfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9LlF8DO3MQoZNRfH0PqRV-EjpYG5YO8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951780559631-015bsccic4lbvjlf2ivvrcq4p79ocmfu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "951780559631-behspteru54qqk9rev4v84dl4e5asv20.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatbridge"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
