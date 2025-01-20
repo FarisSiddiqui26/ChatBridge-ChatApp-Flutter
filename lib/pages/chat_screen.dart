@@ -58,7 +58,7 @@ class _ChatScreenState extends State<ChatScreen> {
               Text(widget.user.name!,
                   style: TextStyle(
                     fontSize: 16,
-                    color: Colors.white70,
+                    color: Colors.white60,
                     fontWeight: FontWeight.w500,
                   )),
           SizedBox(height: 2,),
